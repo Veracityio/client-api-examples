@@ -12,14 +12,28 @@ collateral, remittances, …) and retrieve per-record results. The high-level fl
 3. **Poll** the execution until status is `completed`.
 4. **List** per-loan summaries for the execution (pass / fail / skip counts).
 5. **Drill into** any loan with failures to see the per-rule outcomes.
+6. **Enrich** each failed rule with the loan's actual values for the model fields the
+   rule referenced (so you can answer "why did this rule fail?" — not just "which
+   rule").
 
 For this demo we use the **`kkr-validations`** rule set
 (`42054406-1bac-4e20-a6d5-6f7c22f59fa3`), which is seeded into anubis from
 [`germinate/fixtures/anubis/kkr/rule_sets.json`](../../services/germinate/fixtures/anubis/kkr/rule_sets.json)
 and contains ~100 KKR-specific rules.
 
-[`run_validation.py`](./run_validation.py) walks all five steps in a single run, so
-there is no need to copy IDs between scripts.
+Two scripts walk the flow:
+
+```
+run_validation.py        (steps 1-3: query → run → poll)
+    └── run_validation.output.json    ← captures executionId
+         │
+         ▼
+get_loan_results.py      (steps 4-6: list summaries → drill into worst → enrich w/ loan values)
+    └── get_loan_results.output.json
+```
+
+`get_loan_results.py` reads the executionId from `run_validation.output.json` and
+auto-picks the loan with the most failed rules to drill into — no IDs to copy by hand.
 
 ## Endpoints
 
@@ -117,7 +131,7 @@ execution detail page.
       "execution_id": "019577a5-c8f5-7b9e-8b3a-1c2d3e4f5a6b",
       "model_type": "Loan",
       "record_pk": "loan::abc-123::",
-      "record_sk": "loan::abc-123::final",
+      "record_sk": "loan::final::",
       "total_rule_count": 101,
       "passed_rule_count": 92,
       "failed_rule_count": 8,
@@ -154,7 +168,7 @@ listing above failed.
   "execution_id": "019577a5-c8f5-7b9e-8b3a-1c2d3e4f5a6b",
   "model_type": "Loan",
   "record_pk": "loan::abc-123::",
-  "record_sk": "loan::abc-123::final",
+  "record_sk": "loan::final::",
   "total_rule_count": 101,
   "passed_rule_count": 92,
   "failed_rule_count": 8,
@@ -176,15 +190,57 @@ listing above failed.
 }
 ```
 
-## Example: end-to-end
+## Enriching failed rules with loan values
 
-[`run_validation.py`](./run_validation.py) walks every step in a single run — it picks
-the loans to validate with the same filter shape as `search/query_loans.py`, kicks off
-the `kkr-validations` rule set, polls until done, lists per-loan summaries, and drills
-into the worst-failing loan to dump every failed rule.
+The `/detail` response tells you WHICH model fields each rule referenced (`variables`),
+but not what those fields were actually set to on the loan. Yoshi solves this on the
+rule-detail view by hitting the loan search API a second time, scoped to that one loan,
+with `fields` set to every variable any failed rule mentioned.
+
+The two API calls look like this:
+
+```
+GET /validations/record-executions/detail?record_pk=...&record_sk=...&execution_id=...
+   → response.failed_rules[*].variables  e.g. ["qualifying_fico", "desk"]
+
+POST /loan-services/loans/search
+   {
+     "ids": ["<record_pk>|||<record_sk>"],
+     "fields": ["qualifying_fico", "desk"],
+     "size": 1
+   }
+   → response.results[0]  e.g. { "qualifying_fico": null, "desk": "Investor" }
+```
+
+The OpenSearch document id is the concatenation `{record_pk}|||{record_sk}` (with three
+pipes as the separator), so you can target exactly the loan you just drilled into.
+
+`get_loan_results.py` collects the union of every failed rule's `variables`, fires that
+search once, and then attaches a `values` object onto each failed rule by walking the
+dotted path into the returned loan document:
+
+```json
+{
+  "rule_id": "ba7f251d-…",
+  "validation_rule": "IF @qualifying_fico IS NULL OR (@qualifying_fico >= 300 AND @qualifying_fico <= 850) THEN 'pass' ELSE 'fail'",
+  "message": "Origination FICO must be between 300 and 850",
+  "variables": ["qualifying_fico"],
+  "values": { "qualifying_fico": null }
+}
+```
+
+Dotted variable names (e.g. `mi_data.mi_coverage`, `property_info.0.property_state`)
+traverse nested objects and array indices in the loan document.
+
+## Example: query loans + run validation + poll
+
+[`run_validation.py`](./run_validation.py) — picks the loans to validate with the same
+OpenSearch filter shape as `search/query_loans.py`, then runs the `kkr-validations`
+rule set against just those loans and polls until done. The matched loan IDs and the
+final execution (including its `executionId`) are saved to `run_validation.output.json`.
 
 ```python
-"""Run the KKR loan validations rule set end-to-end against a filtered subset of loans."""
+"""Kick off the KKR loan validations rule set against a filtered subset of loans."""
 
 from __future__ import annotations
 
@@ -203,7 +259,6 @@ MODEL_TYPE = "Loan"
 DATA_SOURCE = "final"
 RULE_SET_ID = "42054406-1bac-4e20-a6d5-6f7c22f59fa3"   # kkr-validations
 POLL_INTERVAL_SECONDS = 3
-RESULTS_LIMIT = 100
 
 LOAN_FILTER = {
     "filter_groups": [
@@ -232,9 +287,7 @@ def main() -> None:
     search_url = f"{base_url}/loan-services/loans/search"
     search_resp = requests.post(search_url, json=search_body, headers=headers, timeout=60)
     search_resp.raise_for_status()
-    search_response = search_resp.json()
-
-    loan_ids = [hit["veracity_loan_id"] for hit in search_response["results"]]
+    loan_ids = [hit["veracity_loan_id"] for hit in search_resp.json()["results"]]
     print(f"\nMatched {len(loan_ids)} loan(s)")
     if not loan_ids:
         sys.exit("filter matched zero loans — nothing to validate")
@@ -243,14 +296,9 @@ def main() -> None:
     run_body = {
         "modelType": MODEL_TYPE,
         "name": "KKR loan validations — public API demo",
-        "description": "Kicked off from api_docs/validations/run_validation.py",
         "ruleSetIds": [RULE_SET_ID],
         "ruleSetCollectionIds": [],
-        "recordFilter": {
-            "data_source": DATA_SOURCE,
-            "ids": loan_ids,
-            "filter_groups": [],
-        },
+        "recordFilter": {"data_source": DATA_SOURCE, "ids": loan_ids, "filter_groups": []},
         "runReason": "manual",
         "emailNotifications": [],
     }
@@ -268,20 +316,106 @@ def main() -> None:
             break
         time.sleep(POLL_INTERVAL_SECONDS)
 
-    # Step 4: list per-loan summaries
+    save_output(__file__, {"matchedLoans": loan_ids, "execution": execution})
+
+
+if __name__ == "__main__":
+    main()
+```
+
+## Example: list loan results + drill into the worst + enrich with loan values
+
+[`get_loan_results.py`](./get_loan_results.py) — reads the executionId from
+`run_validation.output.json`, lists every loan's pass/fail/skip counts, drills into the
+loan with the most failed rules, then asks the loan search API for the actual values of
+every model field any failed rule referenced and attaches those values back onto each
+rule.
+
+```python
+"""Pull every loan-level result for a validation execution, then drill into the worst."""
+
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+from typing import Any
+
+import requests
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from _shared import auth_headers, dump, env, save_output
+from auth.service_account import get_service_access_token
+
+# ─── GLOBAL CONFIG ────────────────────────────────────────────────────────────
+LIMIT = 100
+# ──────────────────────────────────────────────────────────────────────────────
+
+
+def load_execution_id() -> str:
+    output_path = Path(__file__).with_name("run_validation.output.json")
+    if not output_path.exists():
+        sys.exit(
+            f"{output_path.name} not found — run validations/run_validation.py first."
+        )
+    data = json.loads(output_path.read_text())
+    execution_id = data.get("execution", {}).get("executionId")
+    if not execution_id:
+        sys.exit(f"{output_path.name} does not contain execution.executionId.")
+    return execution_id
+
+
+def get_nested(doc: dict, dotted_path: str) -> Any:
+    """Walk a dotted path through a nested dict/list document; None if any segment is missing."""
+    current: Any = doc
+    for part in dotted_path.split("."):
+        if isinstance(current, list):
+            try:
+                current = current[int(part)]
+            except (ValueError, IndexError):
+                return None
+        elif isinstance(current, dict):
+            current = current.get(part)
+        else:
+            return None
+        if current is None:
+            return None
+    return current
+
+
+def main() -> None:
+    base_url = env("VERACITY_BASE_SERVICE_URL")
+    execution_id = load_execution_id()
+    token = get_service_access_token()
+    headers = auth_headers(token)
+
+    # Step 4: list every loan-level result
     results_url = f"{base_url}/validations/record-executions"
     results = requests.get(
         results_url,
-        params={"execution_id": execution_id, "limit": RESULTS_LIMIT},
+        params={"execution_id": execution_id, "limit": LIMIT},
         headers=headers,
         timeout=30,
     ).json()
-    items = sorted(results["items"], key=lambda r: r["failed_rule_count"], reverse=True)
 
-    # Step 5: drill into the worst-failing loan
+    items = sorted(results["items"], key=lambda r: r["failed_rule_count"], reverse=True)
+    print(f"\n{results['count']} loan(s) under execution {execution_id}\n")
+    print(f"  {'record_pk':<40}  {'total':>6}  {'passed':>6}  {'failed':>6}  {'skipped':>7}")
+    print(f"  {'-' * 40}  {'-' * 6}  {'-' * 6}  {'-' * 6}  {'-' * 7}")
+    for r in items:
+        print(
+            f"  {r['record_pk']:<40}  "
+            f"{r['total_rule_count']:>6}  "
+            f"{r['passed_rule_count']:>6}  "
+            f"{r['failed_rule_count']:>6}  "
+            f"{r['skipped_rule_count']:>7}"
+        )
+
     detail = None
     if items and items[0]["failed_rule_count"] > 0:
         worst = items[0]
+
+        # Step 5: drill into the worst-failing loan
         detail_url = f"{base_url}/validations/record-executions/detail"
         detail = requests.get(
             detail_url,
@@ -294,12 +428,37 @@ def main() -> None:
             timeout=30,
         ).json()
 
-    save_output(__file__, {
-        "matchedLoans": loan_ids,
-        "execution": execution,
-        "results": results,
-        "worstLoanDetail": detail,
-    })
+        # Step 6: enrich each failed rule with the loan's actual field values
+        all_vars = sorted({v for r in detail["failed_rules"] for v in r["variables"]})
+        loan_doc: dict = {}
+        if all_vars:
+            enrich_resp = requests.post(
+                f"{base_url}/loan-services/loans/search",
+                json={
+                    "ids": [f"{worst['record_pk']}|||{worst['record_sk']}"],
+                    "fields": all_vars,
+                    "size": 1,
+                },
+                headers=headers,
+                timeout=30,
+            ).json()
+            if enrich_resp["results"]:
+                loan_doc = enrich_resp["results"][0]
+
+        for r in detail["failed_rules"]:
+            r["values"] = {v: get_nested(loan_doc, v) for v in r["variables"]}
+
+        print(f"\nFailed rules for {worst['record_pk']} ({len(detail['failed_rules'])}):")
+        for r in detail["failed_rules"]:
+            print(f"\n  rule_id:         {r['rule_id']}")
+            print(f"  rule_set_name:   {r['rule_set_name']}")
+            print(f"  priority:        {r['priority']}")
+            print(f"  message:         {r['message']}")
+            print(f"  validation_rule: {r['validation_rule']}")
+            print(f"  variables:       {r['variables']}")
+            print(f"  values:          {r['values']}")
+
+    save_output(__file__, {"results": results, "worstLoanDetail": detail})
 
 
 if __name__ == "__main__":

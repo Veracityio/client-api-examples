@@ -1,0 +1,2412 @@
+{
+  "results": {
+    "items": [
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e4-7398-896d-38406405a147::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e5-73a4-b94c-2ca38a5b1b42::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e5-73a4-b94c-2cb59d6760cc::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e5-73a4-b94c-2cbca2438911::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0e7a3db68a2d::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0e7ff1d830b8::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0e84deae61ca::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0e85075e7149::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0e9106290422::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0e94208260aa::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 35,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 44
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0ea59e3cab58::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0ea9fe0f15bd::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0eab435d4aaf::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 44
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e6-702e-9601-0eb3b11d29b3::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bd94fbb707c5::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bda7145debe9::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdae04deb5be::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 35,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 44
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdaf6930dc28::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdb5dc0bf65f::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdb8edc09748::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdbb7895d4ba::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdc3c7e5e3f6::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdc497a48473::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdc5efe00e6f::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdc814cf51f2::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e7-7431-aec4-bdcc3b212145::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e8-763c-ae45-51b15b012700::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e8-763c-ae45-51b461443e78::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e8-763c-ae45-51b7850ccc39::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e8-763c-ae45-51b81ec652d0::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e8-763c-ae45-51ca265f1e5f::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e8-763c-ae45-51d2f03ba30c::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e8-763c-ae45-51d81c10a213::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e8-763c-ae45-51dddf817241::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e9-74a4-84f2-3f04e2669b00::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e9-74a4-84f2-3f07c8d4afd9::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67e9-74a4-84f2-3f25fe4305e2::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ea-7741-bdb6-e0b980f740c6::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ec-77d1-b72b-1f03a5844549::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 35,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 44
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ec-77d1-b72b-1f31eb72dfa4::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 44
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ed-72cf-8c25-e156f3248e0f::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ed-72cf-8c25-e16e879444a8::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ed-72cf-8c25-e1717adccb98::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ed-72cf-8c25-e1837b63f1ce::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ed-72cf-8c25-e184c97f5a94::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ed-72cf-8c25-e1934f2b5788::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ee-7495-b968-2a3d86c70dd5::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ee-7495-b968-2a47cf877dde::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ee-7495-b968-2a4f9a3c5fca::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ee-7495-b968-2a61ca59bc6f::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ef-7388-a567-a8eb7611cd2a::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ef-7388-a567-a8ff644ac6c8::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f1-723a-bb54-fa5f979e41be::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f1-723a-bb54-fa6bfcc14569::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f1-723a-bb54-fa951fedcf5a::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f2-724b-9fff-c05d2a04c9c6::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f3-7300-b060-8f37593661ed::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f4-7292-9ec4-945fa084a246::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f5-75cd-8622-427cb2ef9d45::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 35,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 44
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f5-75cd-8622-427f17f20f89::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f5-75cd-8622-42953d34c561::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f6-77f8-a52e-10634090ceb2::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f6-77f8-a52e-106c4901e270::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f6-77f8-a52e-106d2cccb671::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f6-77f8-a52e-10780d149707::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f6-77f8-a52e-10935bd1c6b9::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f7-747f-b450-b09be80656e8::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f7-747f-b450-b0bf6bdfce5c::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f7-747f-b450-b0c4d8abe402::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f8-752c-b633-a832c90aa8e9::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 35,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 44
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f8-752c-b633-a850a1242018::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f9-7307-a15d-85cd417a326c::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f9-7307-a15d-85cfdf8ab867::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 31,
+        "failed_rule_count": 24,
+        "skipped_rule_count": 46
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67f9-7307-a15d-85d5fae9fcd4::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fa-7544-bf9b-f9c3fdbd4b9e::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fa-7544-bf9b-f9fe46eb235a::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fb-76b8-9f22-fa08d94d438d::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 35,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 44
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fb-76b8-9f22-fa19c1540396::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fb-76b8-9f22-fa318da9477e::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fb-76b8-9f22-fa32fa64d251::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fc-764d-b487-a24075deea98::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fd-75d8-be1c-e62ba51ffd96::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fd-75d8-be1c-e62cb783456a::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fd-75d8-be1c-e63976066a84::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 35,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 44
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fd-75d8-be1c-e63f8f6886bb::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fd-75d8-be1c-e64d4c7b554e::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fe-76e3-af99-2d70b3d78c41::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fe-76e3-af99-2d83e04d694c::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fe-76e3-af99-2d89db092cfc::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67fe-76e3-af99-2d8e2d1c137c::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-67ff-7558-a002-e76a3d58475f::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-6800-74ee-9262-dd297497a45a::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-6800-74ee-9262-dd2c8e0783e5::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-6800-74ee-9262-dd2d0e1b40f3::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-6800-74ee-9262-dd354605392f::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-6800-74ee-9262-dd3b8564a834::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 33,
+        "failed_rule_count": 23,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-6800-74ee-9262-dd5326444d16::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-6801-7204-acb4-1152b1b23798::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-6801-7204-acb4-11591b016f97::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      },
+      {
+        "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+        "model_type": "Loan",
+        "record_pk": "loan::019e48bf-6801-7204-acb4-1168cc48b11f::",
+        "record_sk": "loan::final::",
+        "total_rule_count": 101,
+        "passed_rule_count": 34,
+        "failed_rule_count": 22,
+        "skipped_rule_count": 45
+      }
+    ],
+    "count": 100,
+    "last_evaluated_key": null
+  },
+  "worstLoanDetail": {
+    "execution_id": "019e4e21-925c-712e-abfd-e2e15b238705",
+    "model_type": "Loan",
+    "record_pk": "loan::019e48bf-67f9-7307-a15d-85cfdf8ab867::",
+    "record_sk": "loan::final::",
+    "total_rule_count": 101,
+    "passed_rule_count": 31,
+    "failed_rule_count": 24,
+    "skipped_rule_count": 46,
+    "passed_rules": [
+      {
+        "rule_id": "0edd2899-1347-4219-9155-77ab422b467e",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @curr_fico IS NULL AND @curr_fico_date IS NOT NULL THEN 'fail' ELSE 'pass'",
+        "message": "Curr FICO Date populated when Curr FICO is blank",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "curr_fico",
+          "curr_fico_date"
+        ]
+      },
+      {
+        "rule_id": "1aa5f779-585a-4f02-8fbc-8cf0d02257b2",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @appraisals.0.appraisal_method IS NOT NULL AND @appraisals.0.appraisal_method != 'URAR' THEN 'fail' ELSE 'pass'",
+        "message": "Original appraisal type is not URAR",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "appraisals"
+        ]
+      },
+      {
+        "rule_id": "1edd33d3-8b10-46c1-b18e-6b65fd4b13fa",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_flg == false OR @arm_flg IS NULL THEN IF @arm_next_period_rate_cap IS NULL AND @life_cap IS NULL AND @arm_index IS NULL AND @arm_gross_margin IS NULL AND @rate_reset_freq IS NULL AND @arm_first_adj_dt IS NULL AND @arm_next_adj_dt IS NULL AND @max_arm_lifetime_interest_rate IS NULL AND @min_arm_lifetime_interest_rate IS NULL AND @arm_intial_period_rate_cap IS NULL THEN 'pass' ELSE 'fail'",
+        "message": "Non-ARM loan has ARM-specific data populated",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "arm_first_adj_dt",
+          "arm_flg",
+          "arm_gross_margin",
+          "arm_index",
+          "arm_intial_period_rate_cap",
+          "arm_next_adj_dt",
+          "arm_next_period_rate_cap",
+          "life_cap",
+          "max_arm_lifetime_interest_rate",
+          "min_arm_lifetime_interest_rate",
+          "rate_reset_freq"
+        ]
+      },
+      {
+        "rule_id": "3668703b-872c-421d-b473-a86db4edd26c",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @curr_pmt IS NOT NULL AND @curr_pmt == 0 AND @dq_status_mba != 'PAIDOFF' AND @dq_status_mba != 'LIQUIDATED' THEN 'fail' ELSE 'pass'",
+        "message": "Zero payment for active loan",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "curr_pmt",
+          "dq_status_mba"
+        ]
+      },
+      {
+        "rule_id": "464b1e76-0582-47ad-ac37-45de278c657f",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_flg == true AND @step_rate_flg == 1 THEN 'fail' ELSE 'pass'",
+        "message": "Both ARM and step rate flags are set",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "arm_flg",
+          "step_rate_flg"
+        ]
+      },
+      {
+        "rule_id": "486e0492-5bb2-4520-ba2c-01eb8e4f18b7",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @mod_flg IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing modification flag",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "mod_flg"
+        ]
+      },
+      {
+        "rule_id": "4da2784f-2222-435b-a41b-9c9101d18ba4",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @rem_term IS NOT NULL AND @rem_term > 480 THEN 'fail' ELSE 'pass'",
+        "message": "Remaining term exceeds 480 months",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "rem_term"
+        ]
+      },
+      {
+        "rule_id": "4db5be60-2abe-4b05-9fca-4c203cf5b673",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @current_interest_rate IS NOT NULL AND @current_interest_rate == 0 THEN 'fail' ELSE 'pass'",
+        "message": "Current interest rate is zero",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "current_interest_rate"
+        ]
+      },
+      {
+        "rule_id": "4e6c91e7-26d8-46aa-a89a-83dc803aceaf",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @curr_pmt IS NOT NULL AND @curr_pmt < 0 THEN 'fail' ELSE 'pass'",
+        "message": "Negative current payment",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "curr_pmt"
+        ]
+      },
+      {
+        "rule_id": "560bcb94-64c2-4192-8608-9fc73aafe91a",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @rem_am_term IS NULL OR @rem_am_term >= 0 THEN 'pass' ELSE 'fail'",
+        "message": "Remaining amortization term is negative",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "rem_am_term"
+        ]
+      },
+      {
+        "rule_id": "6c467014-9ae6-4289-b812-c65c1fb1143f",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @step_rate_flg == 0 AND @steps_remaining IS NOT NULL AND @steps_remaining > 0 THEN 'fail' ELSE 'pass'",
+        "message": "Future steps exist without step rate flag set",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "step_rate_flg",
+          "steps_remaining"
+        ]
+      },
+      {
+        "rule_id": "6de95329-7e5c-4b08-8a36-94f9c4ded668",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @borrower_type == 'Entity' AND @borrowers.0.citizenship IS NOT NULL THEN 'fail' ELSE 'pass'",
+        "message": "Entity borrower should not have citizenship populated",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "borrower_type",
+          "borrowers"
+        ]
+      },
+      {
+        "rule_id": "77356e81-9348-4673-8cd1-bf74c4d0fdb6",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @dscr IS NOT NULL AND @occupancy_type != 'INVESTOR' THEN 'fail' ELSE 'pass'",
+        "message": "DSCR is populated for non-investor loan",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "dscr",
+          "occupancy_type"
+        ]
+      },
+      {
+        "rule_id": "79b21203-a8fa-436a-b807-b57ee0f36027",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @step_rate_flg == 1 AND (@steps_remaining IS NULL OR @steps_remaining == 0) THEN 'fail' ELSE 'pass'",
+        "message": "Step rate flag set but no future steps remaining",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "step_rate_flg",
+          "steps_remaining"
+        ]
+      },
+      {
+        "rule_id": "8de7b829-f9c3-4565-a3c3-d5b965215321",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @origination_dt IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing origination date",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "origination_dt"
+        ]
+      },
+      {
+        "rule_id": "918e5399-889b-4a3b-a4dc-46c4a3a5056f",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @borrower.0.last_name IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing Borrower 1 Last Name",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "borrower"
+        ]
+      },
+      {
+        "rule_id": "94c7fad9-79bd-4db1-b966-5e669d2efdec",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @occupancy_type IS NOT NULL AND @occupancy_type != 'Unknown' THEN 'pass' ELSE 'fail'",
+        "message": "Missing or unknown occupancy type",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "occupancy_type"
+        ]
+      },
+      {
+        "rule_id": "9614577d-dd19-41ac-8361-7b4770b1097b",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @desk != 'NPL' AND @desk != 'RPL' AND @originator_name IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "New origination missing originator",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "desk",
+          "originator_name"
+        ]
+      },
+      {
+        "rule_id": "a64b35f0-901f-4d89-9ee2-9b41958be3c2",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_flg == false AND @step_rate_flg != 1 THEN 'fail' ELSE 'pass'",
+        "message": "Neither ARM nor step rate flag is set \u2014 confirm fixed rate",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "arm_flg",
+          "step_rate_flg"
+        ]
+      },
+      {
+        "rule_id": "a699ee5e-9785-4ae9-a91f-eedb9c350a0f",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @loan_purpose IS NOT NULL AND @loan_purpose != 'Unknown' THEN 'pass' ELSE 'fail'",
+        "message": "Missing or unknown loan purpose",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "loan_purpose"
+        ]
+      },
+      {
+        "rule_id": "b21696ce-6af5-43e1-9506-19e117c00033",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @desk != 'NPL' AND @desk != 'RPL' AND (@doc_type IS NULL OR @doc_type == 'Unknown') THEN 'fail' ELSE 'pass'",
+        "message": "New origination missing doc type",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "desk",
+          "doc_type"
+        ]
+      },
+      {
+        "rule_id": "b5c62899-8a18-41bb-8736-3478cc279396",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @cutoff_age > 0 AND @mba_paystring IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "Paystring is blank for loan with payment history",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "cutoff_age",
+          "mba_paystring"
+        ]
+      },
+      {
+        "rule_id": "b7ca92df-4065-4a5c-8c38-d46a05c57066",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @qualifying_fico IS NULL THEN IF @desk == 'RPL' OR @desk == 'NPL' THEN 'pass' ELSE 'fail'",
+        "message": "Origination FICO is required for non-RPL/NPL desks",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "desk",
+          "qualifying_fico"
+        ]
+      },
+      {
+        "rule_id": "d6230274-72b6-4c4f-85a4-631653583371",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @lien_position == '1' THEN 'pass' ELSE 'fail'",
+        "message": "Loan is not first lien",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "lien_position"
+        ]
+      },
+      {
+        "rule_id": "d9e17f32-6db5-4765-9ebf-bb34fb121e6d",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_next_period_rate_cap IS NULL OR @arm_next_period_rate_cap == 0 THEN 'fail' ELSE 'pass'",
+        "message": "Missing periodic cap",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "arm_next_period_rate_cap"
+        ]
+      },
+      {
+        "rule_id": "dae5f841-c4b8-4d8c-80bf-dd78a3c8db1a",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @cutoff_age > 0 AND @mba_paystring IS NOT NULL AND COUNT_CHAR(@mba_paystring, 'M') > 0 THEN 'fail' ELSE 'pass'",
+        "message": "Paystring contains missing data markers (M)",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "cutoff_age",
+          "mba_paystring"
+        ]
+      },
+      {
+        "rule_id": "de93e9a0-f05f-42d0-b3f3-cc0ed638959f",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @curr_pmt IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing current payment",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "curr_pmt"
+        ]
+      },
+      {
+        "rule_id": "ea2c1af5-f95b-4ce6-8c71-adfae4104de2",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @heloc_flg IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing HELOC flag",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "heloc_flg"
+        ]
+      },
+      {
+        "rule_id": "f44731e3-07e6-4170-ab1e-bcd5ae07ab92",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @borrower_type == 'Individual' AND @borrowers.0.citizenship IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "Individual borrower missing Borrower 1 citizenship",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "borrower_type",
+          "borrowers"
+        ]
+      },
+      {
+        "rule_id": "fccfdac0-7044-44e8-be59-3fd3eadccccf",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @bk_flg IS NOT NULL AND @fc_flg IS NOT NULL AND @reo_flg IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing bankruptcy, foreclosure, or REO flag",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "bk_flg",
+          "fc_flg",
+          "reo_flg"
+        ]
+      },
+      {
+        "rule_id": "ffbab37a-abb6-4918-9cde-4dcf9bc09f17",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @mba_paystring IS NOT NULL AND LENGTH(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(REPLACE_TEXT(@mba_paystring, 'C'), '1'), '2'), '3'), '4'), '5'), '6'), '7'), '8'), '9'), 'P'), 'F'), 'M')) > 0 THEN 'fail' ELSE 'pass'",
+        "message": "Paystring contains invalid characters",
+        "outcome": "passed",
+        "priority": "Medium",
+        "variables": [
+          "mba_paystring"
+        ]
+      }
+    ],
+    "failed_rules": [
+      {
+        "rule_id": "05f96819-7723-4d8c-ad92-cd4ac362510d",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @curr_fico IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Current FICO is missing",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "curr_fico"
+        ],
+        "values": {
+          "curr_fico": null
+        }
+      },
+      {
+        "rule_id": "14c9c308-5866-4430-8791-91d04b17a35e",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF (@final_dti IS NOT NULL AND @final_dti > 0) OR (@dscr IS NOT NULL AND @dscr > 0) THEN 'pass' ELSE 'fail'",
+        "message": "Missing both DTI and DSCR",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "dscr",
+          "final_dti"
+        ],
+        "values": {
+          "dscr": null,
+          "final_dti": null
+        }
+      },
+      {
+        "rule_id": "1a9ca9bc-feb8-4122-8764-b0b76783f902",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @originator_name IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing originator (aggregator)",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "originator_name"
+        ],
+        "values": {
+          "originator_name": null
+        }
+      },
+      {
+        "rule_id": "20de782b-3086-424c-95b8-5c5ebe11bed8",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @arm_index IS NOT NULL AND @arm_gross_margin IS NOT NULL AND @rate_reset_freq IS NOT NULL AND @arm_next_adj_dt IS NOT NULL AND @arm_first_adj_dt IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing critical ARM data (index, margin, reset frequency, or reset dates)",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "arm_first_adj_dt",
+          "arm_gross_margin",
+          "arm_index",
+          "arm_next_adj_dt",
+          "rate_reset_freq"
+        ],
+        "values": {
+          "arm_first_adj_dt": null,
+          "arm_gross_margin": null,
+          "arm_index": null,
+          "arm_next_adj_dt": null,
+          "rate_reset_freq": null
+        }
+      },
+      {
+        "rule_id": "232528e4-73e2-4774-bc66-492e5d5536a7",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @guarantor_flg IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing Guarantee Flag",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "guarantor_flg"
+        ],
+        "values": {
+          "guarantor_flg": null
+        }
+      },
+      {
+        "rule_id": "29c671ef-0329-49a3-8781-fac445a2657b",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @origination_interest_rate IS NOT NULL AND @origination_interest_rate > 0 THEN 'pass' ELSE 'fail'",
+        "message": "Missing or zero origination rate",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "origination_interest_rate"
+        ],
+        "values": {
+          "origination_interest_rate": null
+        }
+      },
+      {
+        "rule_id": "2a3d6711-f036-4fd9-9f2a-ba5a6a187370",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @product_type IS NOT NULL AND @product IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing product type(s)",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "product_type",
+          "product"
+        ],
+        "values": {
+          "product_type": "Long Fixed",
+          "product": null
+        }
+      },
+      {
+        "rule_id": "2d8c4a6b-a7a1-4ee2-93ac-6094e09752f6",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @first_payment_dt IS NOT NULL AND @maturity_dt IS NOT NULL AND @maturity_dt > @first_payment_dt THEN 'pass' ELSE 'fail'",
+        "message": "First payment date or maturity date is missing, or maturity is before/equal to first payment",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "first_payment_dt",
+          "maturity_dt"
+        ],
+        "values": {
+          "first_payment_dt": null,
+          "maturity_dt": "2055-10-01"
+        }
+      },
+      {
+        "rule_id": "40b77592-c11d-4969-ba36-ec56c9de42ee",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @foreign_national_flg IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing Foreign National Flag",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "foreign_national_flg"
+        ],
+        "values": {
+          "foreign_national_flg": null
+        }
+      },
+      {
+        "rule_id": "47b1ac52-7051-4057-a286-92bb0e47549d",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @subject_property.state IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing property state",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "subject_property"
+        ],
+        "values": {
+          "subject_property": null
+        }
+      },
+      {
+        "rule_id": "5c540d7d-d226-46ef-90d7-b7851644329e",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF (@final_dti_pct IS NULL OR @final_dti_pct >= 0) AND (@dscr_num IS NULL OR @dscr_num >= 0) THEN 'pass' ELSE 'fail'",
+        "message": "DTI or DSCR is negative",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "final_dti_pct",
+          "dscr_num"
+        ],
+        "values": {
+          "final_dti_pct": null,
+          "dscr_num": null
+        }
+      },
+      {
+        "rule_id": "75930886-959f-4e24-b6c3-e3febdf770b8",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @dq_status_mba IS NOT NULL AND @dq_status_mba != 'UNKNOWN' THEN 'pass' ELSE 'fail'",
+        "message": "Pay status is missing or unknown",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "dq_status_mba"
+        ],
+        "values": {
+          "dq_status_mba": null
+        }
+      },
+      {
+        "rule_id": "78e704ba-e1a4-4d03-8d88-6142915a37a6",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @subject_property.street IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing property address",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "subject_property"
+        ],
+        "values": {
+          "subject_property": null
+        }
+      },
+      {
+        "rule_id": "94d1dabc-9dbc-4de5-b261-4198da83496e",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @orig_balance IS NOT NULL AND @orig_balance > 0 THEN 'pass' ELSE 'fail'",
+        "message": "Missing or zero origination balance",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "orig_balance"
+        ],
+        "values": {
+          "orig_balance": null
+        }
+      },
+      {
+        "rule_id": "9913560c-6e2c-4ac0-ac1e-4a9ca200be51",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF (@arm_intial_period_rate_cap IS NULL OR @arm_intial_period_rate_cap >= 0) AND (@arm_next_period_rate_cap IS NULL OR @arm_next_period_rate_cap >= 0) AND (@life_cap IS NULL OR @life_cap >= 0) AND (@min_arm_lifetime_interest_rate IS NULL OR @min_arm_lifetime_interest_rate >= 0) AND (@max_arm_lifetime_interest_rate IS NULL OR @max_arm_lifetime_interest_rate >= 0) THEN 'pass' ELSE 'fail'",
+        "message": "Negative ARM cap or floor value detected",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "arm_intial_period_rate_cap",
+          "arm_next_period_rate_cap",
+          "life_cap",
+          "max_arm_lifetime_interest_rate",
+          "min_arm_lifetime_interest_rate"
+        ],
+        "values": {
+          "arm_intial_period_rate_cap": null,
+          "arm_next_period_rate_cap": null,
+          "life_cap": null,
+          "max_arm_lifetime_interest_rate": null,
+          "min_arm_lifetime_interest_rate": null
+        }
+      },
+      {
+        "rule_id": "996448ae-f2fe-40e2-9618-e64aab91b6dc",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @orig_ltv IS NOT NULL AND @orig_ltv > 0 AND @combined_ltv IS NOT NULL AND @combined_ltv > 0 THEN 'pass' ELSE 'fail'",
+        "message": "Missing original LTV or CLTV",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "combined_ltv",
+          "orig_ltv"
+        ],
+        "values": {
+          "combined_ltv": null,
+          "orig_ltv": null
+        }
+      },
+      {
+        "rule_id": "9bd39750-d312-4fe5-b5d6-98b825b27f1d",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @total_borrowers_ct IS NOT NULL AND @total_borrowers_ct > 0 THEN 'pass' ELSE 'fail'",
+        "message": "Missing or zero number of borrowers",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "total_borrowers_ct"
+        ],
+        "values": {
+          "total_borrowers_ct": null
+        }
+      },
+      {
+        "rule_id": "9eb67c05-5055-442f-8a9b-e8c1a32058bb",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @subject_property.city IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing property city",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "subject_property"
+        ],
+        "values": {
+          "subject_property": null
+        }
+      },
+      {
+        "rule_id": "a666cb7b-a85d-425a-95cd-6b50d9d073ef",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @subject_property.zip_code IS NOT NULL AND @subject_property.zip_code != '99999' THEN 'pass' ELSE 'fail'",
+        "message": "Missing or invalid property zip code",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "subject_property"
+        ],
+        "values": {
+          "subject_property": null
+        }
+      },
+      {
+        "rule_id": "ba7f251d-5d66-46ec-b50a-0defde163a00",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @qualifying_fico IS NULL OR (@qualifying_fico >= 300 AND @qualifying_fico <= 850) THEN 'pass' ELSE 'fail'",
+        "message": "Origination FICO must be between 300 and 850",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "qualifying_fico"
+        ],
+        "values": {
+          "qualifying_fico": null
+        }
+      },
+      {
+        "rule_id": "c9bb9dd2-89e6-457a-b17b-7b801f27308f",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @orig_pmt IS NULL OR @orig_pmt >= 0 THEN 'pass' ELSE 'fail'",
+        "message": "Origination payment is negative",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "orig_pmt"
+        ],
+        "values": {
+          "orig_pmt": null
+        }
+      },
+      {
+        "rule_id": "db1b0b75-69c4-4cc4-a712-fba1a2833b45",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @curr_fico IS NULL OR (@curr_fico >= 300 AND @curr_fico <= 850) THEN 'pass' ELSE 'fail'",
+        "message": "Current FICO must be between 300 and 850",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "curr_fico"
+        ],
+        "values": {
+          "curr_fico": null
+        }
+      },
+      {
+        "rule_id": "dbf180bf-8d28-4ece-85c3-a20ffe542a3a",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @arm_flg IS NOT NULL AND @step_rate_flg IS NOT NULL THEN 'pass' ELSE 'fail'",
+        "message": "Missing ARM or step rate flag",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "arm_flg",
+          "step_rate_flg"
+        ],
+        "values": {
+          "arm_flg": false,
+          "step_rate_flg": null
+        }
+      },
+      {
+        "rule_id": "f704cfcc-d221-4036-a893-7f852f883129",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "IF @months_housing_pmt_reserves IS NOT NULL AND @months_housing_pmt_reserves > 0 THEN 'pass' ELSE 'fail'",
+        "message": "Missing or zero/negative months of reserves",
+        "outcome": "failed",
+        "priority": "Medium",
+        "variables": [
+          "months_housing_pmt_reserves"
+        ],
+        "values": {
+          "months_housing_pmt_reserves": null
+        }
+      }
+    ],
+    "skipped_rules": [
+      {
+        "rule_id": "004f9aa4-efa7-4a18-89b7-eb3b3290ec0d",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @appraisals.1.appraisal_dt IS NOT NULL AND @remittance_as_of_dt IS NOT NULL AND @appraisals.1.appraisal_dt > @remittance_as_of_dt THEN 'fail' ELSE 'pass'",
+        "message": "Current appraisal date is after cutoff date",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "appraisals",
+          "as_of_date"
+        ]
+      },
+      {
+        "rule_id": "025a953e-46d0-47b3-ac29-199be8c1d350",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @appraisals.0.appraisal_dt IS NOT NULL AND @appraisals.1.appraisal_dt IS NOT NULL AND @appraisals.1.appraisal_dt < @appraisals.0.appraisal_dt THEN 'fail' ELSE 'pass'",
+        "message": "Current appraisal date is before original appraisal date",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "appraisals"
+        ]
+      },
+      {
+        "rule_id": "0603e3c1-b3da-41c3-82e4-7e8c262532a8",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @curr_fico IS NOT NULL AND @curr_fico >= 300 AND @curr_fico <= 850 AND @curr_fico_date IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "Missing Curr FICO Date when Curr FICO is valid",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "curr_fico",
+          "curr_fico_date"
+        ]
+      },
+      {
+        "rule_id": "1479ebcb-d2dc-4645-abf5-a5d93363c54f",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @total_borrowers_ct >= 2 AND (@borrower.1.last_name IS NULL OR @borrower.1.last_name == '0') AND @borrower.1.citizenship IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "2+ borrowers but missing Borrower 2 last name and citizenship",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "borrower",
+          "total_borrowers_ct"
+        ]
+      },
+      {
+        "rule_id": "15280b41-6a05-469f-b63d-9eac5fa9e7fc",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @foreign_national_flg == 0 THEN IF @borrower.0.citizenship != 'ForeignNational' AND @borrower.1.citizenship != 'ForeignNational' THEN 'pass' ELSE 'fail'",
+        "message": "Foreign National Flag is 0 but citizenship indicates Foreign National",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "borrower",
+          "foreign_national_flg"
+        ]
+      },
+      {
+        "rule_id": "2a928e3f-2efe-40ca-a12e-67ed916bda8d",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @curr_fico IS NOT NULL AND @curr_fico_date IS NOT NULL AND @as_of_date IS NOT NULL AND DATE_DIFF(@curr_fico_date, @as_of_date, 'months') > 12 THEN 'fail' ELSE 'pass'",
+        "message": "Curr FICO Date is more than 12 months before cutoff date",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "as_of_date",
+          "curr_fico",
+          "curr_fico_date"
+        ]
+      },
+      {
+        "rule_id": "36199d39-f071-4ed8-952e-a58f21be14e9",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @cutoff_age > 0 AND @dq_status_mba == 'CURRENT' AND EXTRACT_TEXT(@mba_paystring, -1) != 'C' THEN 'fail' ELSE 'pass'",
+        "message": "Pay status is CURRENT but last paystring digit is not C",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "cutoff_age",
+          "dq_status_mba",
+          "mba_paystring"
+        ]
+      },
+      {
+        "rule_id": "366a7fae-9013-4bfe-8093-7a0248a67960",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @appraisals.1.appraised_value_amt IS NOT NULL AND @appraisals.1.appraised_value_amt > 0 AND @appraisals.1.appraisal_dt IS NULL AND @appraisals.1.appraisal_method IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "Current appraisal value present but both type and date are blank",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "appraisals"
+        ]
+      },
+      {
+        "rule_id": "39869191-8d1e-4b7a-92bd-5e765c3192cf",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @orig_ltv > 0 AND @combined_ltv > 0 AND @orig_ltv > @combined_ltv THEN 'fail' ELSE 'pass'",
+        "message": "Original CLTV is less than original LTV",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "combined_ltv",
+          "orig_ltv"
+        ]
+      },
+      {
+        "rule_id": "425d59ca-8b08-47ab-854b-a7e0bb111e6a",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @io_expiration_dt IS NOT NULL AND @maturity_dt IS NOT NULL AND @io_expiration_dt > @maturity_dt THEN 'fail' ELSE 'pass'",
+        "message": "IO expiration date is after maturity date",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "io_expiration_dt",
+          "maturity_dt"
+        ]
+      },
+      {
+        "rule_id": "427eb0d0-accb-4e3e-be21-eb4a08067afb",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @foreign_national_flg == 1 THEN IF @borrower.0.citizenship == 'ForeignNational' OR @borrower.1.citizenship == 'ForeignNational' THEN 'pass' ELSE 'fail'",
+        "message": "Foreign National Flag is 1 but no borrower has Foreign National citizenship",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "borrower",
+          "foreign_national_flg"
+        ]
+      },
+      {
+        "rule_id": "44e0af98-eb99-46a7-8078-0d071ace4509",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @origination_interest_rate IS NOT NULL AND @origination_interest_rate < 1 THEN 'fail' ELSE 'pass'",
+        "message": "Origination rate is less than 1%",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "origination_interest_rate"
+        ]
+      },
+      {
+        "rule_id": "4b583390-d943-44ce-8fb4-4ea9f36eaac7",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @dscr IS NOT NULL AND @dscr > 3 THEN 'fail' ELSE 'pass'",
+        "message": "DSCR exceeds 3.0",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "dscr"
+        ]
+      },
+      {
+        "rule_id": "4eb1e1e4-6cc7-4f03-ad8d-bed659d01f70",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @dq_status_mba != 'PAIDOFF' AND @dq_status_mba != 'LIQUIDATED' THEN IF @curr_ltv IS NOT NULL AND @curr_ltv > 0 AND @curr_cltv IS NOT NULL AND @curr_cltv > 0 THEN 'pass' ELSE 'fail'",
+        "message": "Missing current LTV or CLTV for active loan",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "dq_status_mba",
+          "curr_ltv",
+          "curr_cltv"
+        ]
+      },
+      {
+        "rule_id": "5c1724f4-4b8b-44b9-aa12-fb98a136c75d",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_next_adj_dt IS NOT NULL AND @as_of_date IS NOT NULL AND DATE_DIFF(@as_of_date, @arm_next_adj_dt, 'months') > 120 THEN 'fail' ELSE 'pass'",
+        "message": "Next rate reset date is more than 10 years in the future",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_next_adj_dt",
+          "as_of_date"
+        ]
+      },
+      {
+        "rule_id": "61f08fa2-220c-410e-96fc-db978a77a67d",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_next_period_rate_cap IS NOT NULL AND @arm_next_period_rate_cap < 1 THEN 'fail' ELSE 'pass'",
+        "message": "Periodic cap is less than 1",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_next_period_rate_cap"
+        ]
+      },
+      {
+        "rule_id": "66ed7c68-5fe0-487d-b530-d82a60eb8e9e",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @appraisals.0.appraised_value_amt IS NOT NULL AND @appraisals.0.appraised_value_amt > 0 AND @appraisals.0.appraisal_dt IS NOT NULL AND @appraisals.0.appraisal_method IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "Appraisal type is blank",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "appraisals"
+        ]
+      },
+      {
+        "rule_id": "68474b19-fe35-4dbd-8603-15ea159e7108",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @total_borrowers_ct >= 2 AND @borrower.1.last_name IS NOT NULL AND @borrower.1.last_name != '0' AND @borrower.1.citizenship IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "2+ borrowers but missing Borrower 2 citizenship",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "borrower",
+          "total_borrowers_ct"
+        ]
+      },
+      {
+        "rule_id": "68d4f998-e590-4324-bf4c-e279a58dac58",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @has_pmi_flg == false THEN IF @mi_data.mi_coverage IS NULL AND @mi_data.mi_company IS NULL AND @mi_data.mi_type IS NULL THEN 'pass' ELSE 'fail'",
+        "message": "MI flag is not set but MI data (coverage, company, or type) is populated",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "has_pmi_flg",
+          "mi_data"
+        ]
+      },
+      {
+        "rule_id": "6f9c3df9-eecd-4d80-b161-f305a29508ff",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @current_interest_rate IS NOT NULL AND @fee_strip IS NOT NULL AND @curr_net_rate IS NOT NULL AND @current_interest_rate - @fee_strip != @curr_net_rate THEN 'fail' ELSE 'pass'",
+        "message": "Current rate minus servicing fee does not equal net rate",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "curr_net_rate",
+          "current_interest_rate",
+          "fee_strip"
+        ]
+      },
+      {
+        "rule_id": "79c1adec-24ae-4e4e-8822-fa4656c5bfb8",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @life_cap IS NOT NULL AND @life_cap != 0 AND @life_cap < 1 THEN 'fail' ELSE 'pass'",
+        "message": "Life cap is less than 1",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "life_cap"
+        ]
+      },
+      {
+        "rule_id": "8b09d478-3197-4e46-9fc3-6b1a0227f856",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN (@rate_reset_freq IS NOT NULL AND @rate_reset_freq > 36) THEN 'fail' ELSE 'pass'",
+        "message": "Rate reset frequency exceeds 36 months",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "rate_reset_freq"
+        ]
+      },
+      {
+        "rule_id": "8b53d537-37c7-45bc-b3cb-b36057c1a7bb",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @dq_status_mba != 'PAIDOFF' AND @dq_status_mba != 'LIQUIDATED' AND @maturity_dt IS NOT NULL AND ((@as_of_date IS NOT NULL AND @maturity_dt <= @as_of_date) OR (@paid_to_date IS NOT NULL AND @maturity_dt <= @paid_to_date)) THEN 'fail' ELSE 'pass'",
+        "message": "Maturity date is on or before cutoff or paid-to date for active loan",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "as_of_date",
+          "dq_status_mba",
+          "maturity_dt",
+          "paid_to_date"
+        ]
+      },
+      {
+        "rule_id": "926d5a5f-43e4-4551-9398-29b4aeda47b8",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_first_adj_dt IS NOT NULL AND @arm_next_adj_dt IS NOT NULL THEN IF @arm_first_adj_dt <= @arm_next_adj_dt THEN 'pass' ELSE 'fail'",
+        "message": "First rate reset date is after next rate reset date",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_first_adj_dt",
+          "arm_next_adj_dt"
+        ]
+      },
+      {
+        "rule_id": "98de2e40-f06b-4551-9941-08aef5d4e727",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @curr_fico IS NOT NULL AND @curr_fico_date IS NOT NULL AND @as_of_date IS NOT NULL AND DATE_DIFF(@curr_fico_date, @as_of_date, 'months') < -12 THEN 'fail' ELSE 'pass'",
+        "message": "Curr FICO Date is after cutoff date",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "as_of_date",
+          "curr_fico",
+          "curr_fico_date"
+        ]
+      },
+      {
+        "rule_id": "9dd0f344-a6fb-4239-991d-31e35d444527",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @origination_interest_rate IS NOT NULL AND @origination_interest_rate > 20 THEN 'fail' ELSE 'pass'",
+        "message": "Origination rate exceeds 20%",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "origination_interest_rate"
+        ]
+      },
+      {
+        "rule_id": "9e88aba1-a3fd-4a54-a047-14096b6376fa",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @appraisals.0.appraised_value_amt IS NOT NULL AND @appraisals.0.appraised_value_amt > 0 AND @appraisals.0.appraisal_dt IS NULL AND @appraisals.0.appraisal_method IS NOT NULL THEN 'fail' ELSE 'pass'",
+        "message": "Appraisal date is blank",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "appraisals"
+        ]
+      },
+      {
+        "rule_id": "a5f2f811-3289-472e-aa07-361e96d8f75d",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @appraisals.1.appraised_value_amt IS NOT NULL AND @appraisals.1.appraised_value_amt > 0 AND @appraisals.1.appraisal_dt IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "Current appraisal date is blank",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "appraisals"
+        ]
+      },
+      {
+        "rule_id": "a7dbf2b2-4dd7-4f5e-a8e2-25f4a38540a2",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @appraisals.1.appraised_value_amt IS NOT NULL AND @appraisals.1.appraised_value_amt > 0 AND @appraisals.1.appraisal_method IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "Current appraisal type is blank",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "appraisals"
+        ]
+      },
+      {
+        "rule_id": "b0acf90e-3e75-4686-9328-df9f95d70e13",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @life_cap IS NOT NULL AND @life_cap != 0 AND @life_cap > 25 THEN 'fail' ELSE 'pass'",
+        "message": "Life cap exceeds 25",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "life_cap"
+        ]
+      },
+      {
+        "rule_id": "b559f8a4-8f13-4873-bc57-ed4962548598",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @cutoff_age > 0 AND @dq_status_mba == 'DELQ30' AND EXTRACT_TEXT(@mba_paystring, -1) != '1' THEN 'fail' ELSE 'pass'",
+        "message": "Pay status is 30 DLQ but last paystring digit is not 1",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "cutoff_age",
+          "dq_status_mba",
+          "mba_paystring"
+        ]
+      },
+      {
+        "rule_id": "bd1e70e4-e517-438e-b8a6-5f7e321a5295",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_next_adj_dt IS NOT NULL AND @paid_to_date IS NOT NULL AND @arm_next_adj_dt <= @paid_to_date THEN 'fail' ELSE 'pass'",
+        "message": "Next rate reset date is on or before paid-to date",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_next_adj_dt",
+          "paid_to_date"
+        ]
+      },
+      {
+        "rule_id": "c1b253fc-f412-452d-9c71-ec763ef6b9aa",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @appraisals.0.appraised_value_amt IS NOT NULL AND @appraisals.0.appraised_value_amt > 0 AND @appraisals.0.appraisal_dt IS NULL AND @appraisals.0.appraisal_method IS NULL THEN 'fail' ELSE 'pass'",
+        "message": "Appraisal value present but both type and date are blank",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "appraisals"
+        ]
+      },
+      {
+        "rule_id": "c857d94b-ffab-4dfc-a9ea-4508532d6005",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @max_arm_lifetime_interest_rate IS NOT NULL AND @arm_gross_margin IS NOT NULL AND @arm_gross_margin > @max_arm_lifetime_interest_rate THEN 'fail' ELSE 'pass'",
+        "message": "ARM margin exceeds lifetime maximum rate",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_gross_margin",
+          "max_arm_lifetime_interest_rate"
+        ]
+      },
+      {
+        "rule_id": "ce726812-414f-41b3-adf4-29d360212f1c",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @final_dti IS NOT NULL AND @final_dti > 0 AND @dscr IS NOT NULL AND @dscr > 0 THEN 'fail' ELSE 'pass'",
+        "message": "Both DTI and DSCR are populated \u2014 expected only one",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "dscr",
+          "final_dti"
+        ]
+      },
+      {
+        "rule_id": "d1d29e66-91ab-42dc-aa8f-e382738314cc",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @desk != 'NPL' AND @desk != 'RPL' THEN IF (@balloon_flg IS NOT NULL AND @orig_amortization_term IS NOT NULL AND @interest_only_flg IS NOT NULL AND @orig_amortization_term >= 0 AND @orig_interest_only_term >= 0) THEN 'pass' ELSE 'fail'",
+        "message": "New origination missing balloon flag, orig amortization term, or orig IO flag (or negative values)",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "balloon_flg",
+          "desk",
+          "interest_only_flg",
+          "orig_amortization_term",
+          "orig_interest_only_term"
+        ]
+      },
+      {
+        "rule_id": "d8955b12-cac7-4217-ac99-1b176fcf47dc",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @orig_balance IS NOT NULL AND @orig_balance < 0 THEN 'fail' ELSE 'pass'",
+        "message": "Negative origination balance",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "orig_balance"
+        ]
+      },
+      {
+        "rule_id": "dbcf95bc-aee0-42e3-bab1-3bb7b0668c0b",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_next_period_rate_cap IS NOT NULL AND @arm_next_period_rate_cap > 25 THEN 'fail' ELSE 'pass'",
+        "message": "Periodic cap exceeds 25",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_next_period_rate_cap"
+        ]
+      },
+      {
+        "rule_id": "dca0229a-fa60-4812-9ee7-27c77c14a248",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_flg == false AND (CONTAINS(@product_type, 'ARM') == 'Y' OR CONTAINS(@product_type, 'ARM') == 'Y') THEN 'fail' ELSE 'pass'",
+        "message": "ARM flag is not set but product type contains ARM",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_flg",
+          "product_type"
+        ]
+      },
+      {
+        "rule_id": "e36c1692-d2ea-4625-b6fa-a7a625e0a840",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @curr_ltv > 0 AND @curr_cltv > 0 AND @curr_ltv > @curr_cltv THEN 'fail' ELSE 'pass'",
+        "message": "Current CLTV is less than current LTV",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "curr_ltv",
+          "curr_cltv"
+        ]
+      },
+      {
+        "rule_id": "e722804f-f14c-4761-ad38-b19284a0e433",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_flg == true AND (CONTAINS(@product_type, 'ARM') != 'Y' OR CONTAINS(@product_type, 'ARM') != 'Y') THEN 'fail' ELSE 'pass'",
+        "message": "ARM flag is set but product type does not contain ARM",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_flg",
+          "product_type"
+        ]
+      },
+      {
+        "rule_id": "eb4edd70-a325-45e4-ad19-71fd83bf37b5",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @arm_flg == true THEN IF @step_rate_flg IS NULL OR @step_rate_flg == 0 THEN 'pass' ELSE 'fail'",
+        "message": "ARM loan has step rate data",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_flg",
+          "step_rate_flg"
+        ]
+      },
+      {
+        "rule_id": "ebd53cf2-a4c9-427f-bcfb-f8c18645b209",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @desk != 'NPL' AND @desk != 'RPL' AND @dq_status_mba != 'PAIDOFF' AND @dq_status_mba != 'LIQUIDATED' AND (@mod_flg IS NULL OR @mod_flg == false) AND @arm_flg == false AND (@step_rate_flg IS NULL OR @step_rate_flg == 0) AND @curr_pmt IS NOT NULL AND @orig_pmt IS NOT NULL AND ABS_VALUE(@curr_pmt - @orig_pmt) > 5 THEN 'fail' ELSE 'pass'",
+        "message": "Current payment differs from origination payment by more than $5 on non-ARM/non-step unmodified loan",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_flg",
+          "curr_pmt",
+          "desk",
+          "dq_status_mba",
+          "mod_flg",
+          "orig_pmt",
+          "step_rate_flg"
+        ]
+      },
+      {
+        "rule_id": "edb3689a-16ce-4e02-8e5b-a2898d6062ca",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @final_dti IS NOT NULL AND (@final_dti < 5 OR @final_dti > 75) THEN 'fail' ELSE 'pass'",
+        "message": "DTI is outside expected range (5-75%)",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "final_dti"
+        ]
+      },
+      {
+        "rule_id": "f259508e-530b-4771-b224-a1946045a369",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @desk != 'NPL' AND @desk != 'RPL' AND @dq_status_mba != 'PAIDOFF' AND @dq_status_mba != 'LIQUIDATED' AND (@mod_flg IS NULL OR @mod_flg == false) AND @arm_flg == false AND (@step_rate_flg IS NULL OR @step_rate_flg == 0) AND @current_interest_rate IS NOT NULL AND @origination_interest_rate IS NOT NULL AND ABS_VALUE(@current_interest_rate - @origination_interest_rate) > 0.125 THEN 'fail' ELSE 'pass'",
+        "message": "Current rate differs from origination rate by more than 0.125% on non-ARM/non-step unmodified loan",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "arm_flg",
+          "current_interest_rate",
+          "desk",
+          "dq_status_mba",
+          "mod_flg",
+          "origination_interest_rate",
+          "step_rate_flg"
+        ]
+      },
+      {
+        "rule_id": "f744d48e-1535-49c0-8210-57d72511b88e",
+        "rule_set_id": "42054406-1bac-4e20-a6d5-6f7c22f59fa3",
+        "rule_set_name": "kkr-validations",
+        "validation_rule": "WHEN @total_borrowers_ct >= 2 AND (@borrower.1.last_name IS NULL OR @borrower.1.last_name == '0') AND @borrower.1.citizenship IS NOT NULL THEN 'fail' ELSE 'pass'",
+        "message": "2+ borrowers but missing Borrower 2 last name",
+        "outcome": "skipped",
+        "priority": "Medium",
+        "variables": [
+          "borrower",
+          "total_borrowers_ct"
+        ]
+      }
+    ]
+  }
+}

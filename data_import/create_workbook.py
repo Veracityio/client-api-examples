@@ -37,7 +37,7 @@ from mappings import main_position_mappings
 # variables loaded from api_docs/.env.
 
 FILE_PATH = "MainPositionSubset.xlsx"  # at the root of api_docs/
-WORKBOOK_NAME = "MainPosition1"  # Logical name to register this workbook under
+WORKBOOK_NAME = "MainPositionLateNight"  # Logical name to register this workbook under
 WORKBOOK_VERSION = "1"  # Version to write — leave at "1" for a new workbook
 DATA_KIND = "Loan"  # ModelType: Loan | Exception | Remittance | ...
 VENDOR_NAME = None  # Optional: name of the external vendor, or None

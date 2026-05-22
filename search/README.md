@@ -126,9 +126,20 @@ required.
 
 ### Filtering by document ID
 
+Each loan's OpenSearch document ID is its `{record_pk}|||{record_sk}` pair (three pipes
+between them). For loans, that takes the shape `loan::{veracity_loan_id}::|||loan::{data_source}::`:
+
 ```json
-{ "ids": ["LOAN#123|||DETAIL", "LOAN#456|||DETAIL"] }
+{
+  "ids": [
+    "loan::019577a5-c8f5-7b9e-8b3a-1c2d3e4f5a6b::|||loan::final::",
+    "loan::019577a5-d712-7c4e-9c2f-8a3b1d7e6f50::|||loan::final::"
+  ]
+}
 ```
+
+The `record_pk` / `record_sk` values come back on every search response (and from the
+validations record-execution endpoints), so you can copy them straight in.
 
 ## Pagination and sorting
 
@@ -245,7 +256,7 @@ Returned when there is no `groupby` and no top-level `metrics`.
   "total": 2,
   "results": [
     {
-      "opensearch_id": "LOAN#123|||DETAIL",
+      "opensearch_id": "loan::019577a5-c8f5-7b9e-8b3a-1c2d3e4f5a6b::|||loan::final::",
       "opensearch_score": 1.0,
       "loan_number": "L-000123",
       "status": "active",
@@ -253,7 +264,7 @@ Returned when there is no `groupby` and no top-level `metrics`.
       "state": "CA"
     },
     {
-      "opensearch_id": "LOAN#456|||DETAIL",
+      "opensearch_id": "loan::019577a5-d712-7c4e-9c2f-8a3b1d7e6f50::|||loan::final::",
       "opensearch_score": 0.8,
       "loan_number": "L-000456",
       "status": "active",
