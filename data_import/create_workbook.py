@@ -46,7 +46,7 @@ MAPPINGS = main_position_mappings  # SET statements from api_docs/mappings.py
 
 
 def main() -> None:
-    base_url = env("VERACITY_BASE_URL")
+    base_url = env("VERACITY_BASE_SERVICE_URL")
     file_path = Path(FILE_PATH)
     file_size = file_path.stat().st_size
 

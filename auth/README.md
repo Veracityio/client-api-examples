@@ -26,12 +26,18 @@ The service-account token carries the tenant claim, so no explicit tenant header
 
 ```bash
 VERACITY_BASE_URL=https://core-beta.veracityloan.ai
+VERACITY_BASE_SERVICE_URL=https://core-service-beta.veracityloan.ai
 CLIENT_ID=...
 CLIENT_SECRET=...
 API_KEY=...
 ```
 
 These may be set in your shell or placed in `api_docs/.env` (auto-loaded by every script).
+
+Two hosts are involved:
+- **`VERACITY_BASE_URL`** — the auth host. Only the token-exchange call below talks to it.
+- **`VERACITY_BASE_SERVICE_URL`** — the API host. Every example script in `search/`,
+  `data_import/`, and `validations/` reads this one for its API calls.
 
 The `CLIENT_ID`, `CLIENT_SECRET`, and `API_KEY` values were delivered to you in a 1Password
 note. Treat all three as sensitive — never check them into source control, never paste them
@@ -104,16 +110,19 @@ def get_service_access_token() -> str:
     than trying to refresh — there is no refresh-token flow for service accounts.
     """
     # Pulled from the environment (or api_docs/.env, which _shared auto-loads):
-    #   VERACITY_BASE_URL  e.g. https://core-beta.veracityloan.ai
-    #   CLIENT_ID          your service account's client id
-    #   CLIENT_SECRET      your service account's client secret
+    #   VERACITY_BASE_URL          the auth host (e.g. https://core-beta.veracityloan.ai).
+    #                              Token exchange happens here ONLY — every subsequent
+    #                              API call goes to VERACITY_BASE_SERVICE_URL instead.
+    #   CLIENT_ID                  your service account's client id
+    #   CLIENT_SECRET              your service account's client secret
     base_url = env("VERACITY_BASE_URL")
     client_id = env("CLIENT_ID")
     client_secret = env("CLIENT_SECRET")
 
     # The /pub/tokens/service-account endpoint takes a JSON body with the credential
     # pair and returns a JWT plus metadata. It does NOT require an Authorization
-    # header itself — the credentials in the body ARE the authentication.
+    # header itself — the credentials in the body ARE the authentication. It also does
+    # NOT require the x-api-key header (that's only on the core-service-* host).
     request_body = {
         "client_id": client_id,
         "client_secret": client_secret,

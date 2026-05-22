@@ -1,11 +1,15 @@
-"""Query loans via the OpenSearch-backed search endpoint.
+"""Query KKR loans via the OpenSearch-backed search endpoint.
 
 Endpoint:
-    POST {VERACITY_BASE_URL}/loan-services/loans/search
+    POST {VERACITY_BASE_SERVICE_URL}/loan-services/loans/search
 
 The request body is an OpenSearchQueryBody (see ../README.md for the full DSL). This
-example filters active loans in California with a balance >= $100k, returns the most
-recent ones first, and only includes a few fields per hit.
+example filters loans on the KKR-specific `desk` field, sorts by original loan balance
+(largest first), and projects a focused set of fields per hit.
+
+The field names below come from the KKR position mappings in api_docs/mappings.py — the
+left-hand-side of each `SET` statement is a queryable field once data has been imported
+via create_workbook.py + upload_data.py.
 
 Run:
     python query_loans.py
@@ -24,23 +28,30 @@ from auth.service_account import get_service_access_token
 
 
 def main() -> None:
-    base_url = env("VERACITY_BASE_URL")
+    base_url = env("VERACITY_BASE_SERVICE_URL")
     token = get_service_access_token()
 
     query_body = {
         "filter_groups": [
             {
                 "filters": [
-                    {"field": "status", "value": "active"},
-                    {"field": "subject_property.state", "value": "CA"},
-                    {"field": "balance", "value": "100000", "operator": "gte"},
+                    {"field": "desk", "value": "RPL"},
                 ]
             }
         ],
-        "sort": "-created_at",
+        "sort": "-orig_bal",
         "size": 25,
         "page": 0,
-        "fields": ["loan_number", "status", "balance", "subject_property.state", "created_at"],
+        "fields": [
+            "tenant_loan_id",
+            "seller_name",
+            "desk",
+            "sub_desk",
+            "position_status",
+            "orig_bal",
+            "settle_dt",
+            "property_info.0.property_state",
+        ],
     }
 
     url = f"{base_url}/loan-services/loans/search"

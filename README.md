@@ -10,7 +10,7 @@ All examples use plain [`requests`](https://requests.readthedocs.io/).
 | Directory | What it covers |
 | --- | --- |
 | [`auth/`](./auth) | How to obtain an access token using a service account |
-| [`search/`](./search) | How to query the search-style endpoints (loans, exceptions, …) using the OpenSearch query DSL |
+| [`search/`](./search) | How to query the search-style endpoints (loans, …) using the OpenSearch query DSL |
 | [`data_import/`](./data_import) | How to import a workbook of data through Kazooie's chunked upload pipeline |
 | [`validations/`](./validations) | How to run rule-set validations and retrieve per-record results |
 
@@ -22,10 +22,16 @@ script):
 
 | Variable | Description | Example |
 | --- | --- | --- |
-| `VERACITY_BASE_URL` | Public API base URL | `https://core-beta.veracityloan.ai` |
+| `VERACITY_BASE_URL` | Auth host — used **only** by the token-exchange call | `https://core-beta.veracityloan.ai` |
+| `VERACITY_BASE_SERVICE_URL` | API host — used by every other call (search, data import, validations) | `https://core-service-beta.veracityloan.ai` |
 | `CLIENT_ID` | Service-account client id | — |
 | `CLIENT_SECRET` | Service-account client secret | — |
-| `API_KEY` | AWS API Gateway key (sent as `x-api-key` on every request) | — |
+| `API_KEY` | AWS API Gateway key (sent as `x-api-key` on every API call) | — |
+
+The Veracity API is split across two hosts: a public auth host (`core-{env}…`) used only
+to exchange your service-account credentials for a bearer token, and a separate API host
+(`core-service-{env}…`) for everything else. The two hosts have different gateways —
+that's why `x-api-key` is required only on the second.
 
 The `CLIENT_ID`, `CLIENT_SECRET`, and `API_KEY` values were delivered to you in a
 1Password note. Copy them into the variables above (or into `api_docs/.env`).
@@ -34,6 +40,7 @@ Sample `api_docs/.env`:
 
 ```bash
 VERACITY_BASE_URL=https://core-beta.veracityloan.ai
+VERACITY_BASE_SERVICE_URL=https://core-service-beta.veracityloan.ai
 CLIENT_ID=...
 CLIENT_SECRET=...
 API_KEY=...
@@ -41,7 +48,10 @@ API_KEY=...
 
 ## Required headers
 
-Every authenticated request requires two headers:
+Token-exchange call (`POST {VERACITY_BASE_URL}/pub/tokens/service-account`) takes only the
+JSON body — no `Authorization`, no `x-api-key`.
+
+Every other API call requires both:
 
 ```
 Authorization: Bearer <access_token>

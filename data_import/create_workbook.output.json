@@ -1,0 +1,18 @@
+{
+  "initiate": {
+    "expiration": 3600,
+    "url": "https://kazooie-kkr-data-dev.s3.us-west-2.amazonaws.com/kkr/workbook/MainPosition1/original/MainPositionSubset.xlsx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA6GBMEVTI3HJIXIWL%2F20260522%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260522T021908Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=content-type%3Bhost%3Bx-amz-server-side-encryption&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEsaCXVzLXdlc3QtMiJHMEUCIEX1PxCgf0tAH6a4Kq5OGRfHXVofDLpXRV8iofixl%2FYUAiEAqD2WZS0FgN8KoVWJfGdcU68nhTMDwUxMRtcc4dJmoloq8gMIExAAGgw5NzUwNTAxNTcyNjUiDLi2oAuMDCLfgoqJhirPA%2BB6v4MCJ00o6P7Ew9cN%2Fl3nVi8MvUudgYIxMv2YYH46utg4VCU6E4seHRv%2FKh%2BQdbPKfjjfIXRVZeU9bfcv3inNkvPiwzGf%2FwsVhD26YZ%2FgdIaoTJuY8BB%2BcNfOx58GydoBctLl04Ko0B9lCX9hiWYR1NzbtPHQXjGxxTbbeCCIed6n4pXs8A%2BtqE5Li9j0HbOKOAKfk9setcpbprZN1g1MULuvk3cZcXNlkuC6Whgr2ZljzCyIQCUCWHVlBERnDiLic64KjJF6D1YuCXqzuH95XBRZXGF6Lb7yaVDKzvkgVktxYKmPcLy2AMHpi5hF4uvT89c6Wlce%2FE%2FNLdr26uT5MBhPm5gIz%2B9IbobPd23gu5YpkPWlX2CPfVxNa5NZtGVwI%2FEQD4eR5M2cz3Z%2BJpZxRTaVPmmK4C4K%2F6E0XjKqKvcy1a7RFP6WxzTk2xfGX1lYtt7Z8Vt4dzV4KvRDa6G1S2%2Bh72TPK%2Biu0tDdaOrGVMQud5XK1XIpF25rnTc3eZ1GxkQkNiv4d0psEuv0w%2F4Rvrvll4kaqluY9186HMSZ1Ta0T8CIixZNJT8q%2FzhWBp7tJvXSBz3mfu6o9hlfgF5V23hBnG%2BYw4nMzhzFdNEwlfq%2B0AY6oQHHDTup6mw%2BRqYFKzac%2B9wGqnEqVs4R5BHHgheorj5GrpvXfQYSkQsGUeLltXmFYrolC60HDpi5ovmA6GE%2B2sDF0cTc7xrE4r3QgoprwknC21l%2BjmoiC%2F0E%2B6xfkKPMd2uf9LBIXexGFnFqUFcdtnfqkJHANyD5u1jMl4SblCYjXqN4kxVkmboIwtNFCfBrUyuaP1VPkJWI8TIyonhjYJ0HHQ%3D%3D&X-Amz-Signature=5d34c8485f1fc671cd798083f17809c5bbc2ed301610a27396406df3b5c1c48f",
+    "workbookName": "MainPosition1"
+  },
+  "mappings": {
+    "workbook_name": "MainPosition1",
+    "workbook_version": "1",
+    "block_number": "1",
+    "mappings_received": 380
+  },
+  "publish": {
+    "workbookName": "MainPosition1",
+    "workbookVersion": "1",
+    "isPublished": true
+  }
+}

@@ -1,19 +1,18 @@
 # Search (OpenSearch Query DSL)
 
-Many of the public Veracity endpoints — including loan search and exception search — accept
-a common JSON request body that lets you express filters, sorting, pagination, and
-aggregations against the underlying OpenSearch indexes.
+Many of the public Veracity endpoints — including loan search — accept a common JSON
+request body that lets you express filters, sorting, pagination, and aggregations
+against the underlying OpenSearch indexes.
 
-This document describes the shape of that request body and the responses it can return. The
-DSL is identical regardless of which resource you're querying; only the URL and the field
-names available on the documents change.
+This document describes the shape of that request body and the responses it can return.
+The DSL is identical regardless of which resource you're querying; only the URL and the
+field names available on the documents change.
 
 ## Endpoints covered
 
 | Resource | Method | Path |
 | --- | --- | --- |
 | Loans | `POST` | `{base_url}/loan-services/loans/search` |
-| Loan exceptions | `POST` | `{base_url}/loan-assets/loan-exceptions` |
 
 Other tenant-facing endpoints that accept the same DSL include collateral, remittances,
 and trades — see the Swagger spec for the full list.
@@ -325,16 +324,17 @@ Returned when `metrics` are specified without `groupby`.
 }
 ```
 
-## Example: query loans
+## Example: query KKR loans
 
-[`query_loans.py`](./query_loans.py) — filters active CA loans with balance >= $100k,
-sorted newest first, returning only a few fields per hit.
+[`query_loans.py`](./query_loans.py) — filters KKR loans on the `desk` field, sorts by
+original balance (largest first), and projects a focused set of fields per hit. The
+field names come from the KKR position mappings in [`../mappings.py`](../mappings.py).
 
 ```python
-"""Query loans via the OpenSearch-backed search endpoint.
+"""Query KKR loans via the OpenSearch-backed search endpoint.
 
 Endpoint:
-    POST {VERACITY_BASE_URL}/loan-services/loans/search
+    POST {VERACITY_BASE_SERVICE_URL}/loan-services/loans/search
 """
 
 from __future__ import annotations
@@ -350,92 +350,33 @@ from auth.service_account import get_service_access_token
 
 
 def main() -> None:
-    base_url = env("VERACITY_BASE_URL")
+    base_url = env("VERACITY_BASE_SERVICE_URL")
     token = get_service_access_token()
 
     query_body = {
         "filter_groups": [
             {
                 "filters": [
-                    {"field": "status", "value": "active"},
-                    {"field": "subject_property.state", "value": "CA"},
-                    {"field": "balance", "value": "100000", "operator": "gte"},
+                    {"field": "desk", "value": "RPL"},
                 ]
             }
         ],
-        "sort": "-created_at",
+        "sort": "-orig_bal",
         "size": 25,
         "page": 0,
-        "fields": ["loan_number", "status", "balance", "subject_property.state", "created_at"],
+        "fields": [
+            "tenant_loan_id",
+            "seller_name",
+            "desk",
+            "sub_desk",
+            "position_status",
+            "orig_bal",
+            "settle_dt",
+            "property_info.0.property_state",
+        ],
     }
 
     url = f"{base_url}/loan-services/loans/search"
-    dump(f"POST {url}", query_body)
-
-    response = requests.post(
-        url,
-        json=query_body,
-        headers=auth_headers(token),
-        timeout=60,
-    )
-    response.raise_for_status()
-    body = response.json()
-
-    dump("Response", body)
-    save_output(__file__, body)
-
-
-if __name__ == "__main__":
-    main()
-```
-
-## Example: aggregate exceptions
-
-[`query_exceptions.py`](./query_exceptions.py) — groups open loan exceptions by category
-and computes a sum and average of the exception amount per bucket.
-
-```python
-"""Query loan exceptions, grouped by category with summed amounts.
-
-Endpoint:
-    POST {VERACITY_BASE_URL}/loan-assets/loan-exceptions
-"""
-
-from __future__ import annotations
-
-import sys
-from pathlib import Path
-
-import requests
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from _shared import auth_headers, dump, env, save_output
-from auth.service_account import get_service_access_token
-
-
-def main() -> None:
-    base_url = env("VERACITY_BASE_URL")
-    token = get_service_access_token()
-
-    query_body = {
-        "filter_groups": [
-            {
-                "filters": [
-                    {"field": "status", "value": "open"},
-                ]
-            }
-        ],
-        "groupby": [
-            {"data_type": "string", "field": "category", "size": 50}
-        ],
-        "metrics": [
-            {"field": "amount", "metric": "sum", "name": "total_amount"},
-            {"field": "amount", "metric": "avg", "name": "avg_amount"},
-        ],
-        "include_hits": False,
-    }
-
-    url = f"{base_url}/loan-assets/loan-exceptions"
     dump(f"POST {url}", query_body)
 
     response = requests.post(

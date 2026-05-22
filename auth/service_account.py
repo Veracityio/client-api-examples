@@ -33,16 +33,19 @@ def get_service_access_token() -> str:
     than trying to refresh — there is no refresh-token flow for service accounts.
     """
     # Pulled from the environment (or api_docs/.env, which _shared auto-loads):
-    #   VERACITY_BASE_URL  e.g. https://core-beta.veracityloan.ai
-    #   CLIENT_ID          your service account's client id
-    #   CLIENT_SECRET      your service account's client secret
+    #   VERACITY_BASE_URL          the auth host (e.g. https://core-beta.veracityloan.ai).
+    #                              Token exchange happens here ONLY — every subsequent
+    #                              API call goes to VERACITY_BASE_SERVICE_URL instead.
+    #   CLIENT_ID                  your service account's client id
+    #   CLIENT_SECRET              your service account's client secret
     base_url = env("VERACITY_BASE_URL")
     client_id = env("CLIENT_ID")
     client_secret = env("CLIENT_SECRET")
 
     # The /pub/tokens/service-account endpoint takes a JSON body with the credential
     # pair and returns a JWT plus metadata. It does NOT require an Authorization
-    # header itself — the credentials in the body ARE the authentication.
+    # header itself — the credentials in the body ARE the authentication. It also does
+    # NOT require the x-api-key header (that's only on the core-service-* host).
     request_body = {
         "client_id": client_id,
         "client_secret": client_secret,

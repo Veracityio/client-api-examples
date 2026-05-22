@@ -5,8 +5,8 @@ Importing data into Veracity is a two-phase process:
 1. **Create a workbook** — define the template (file + mapping rules) that describes how
    a source file's columns map to Veracity fields. Done once per workbook, updated when
    the schema changes. See [`create_workbook.py`](./create_workbook.py).
-2. **Upload data** — push actual records (loans, exceptions, …) through a published
-   workbook. Done every time you have a new file to import.
+2. **Upload data** — push actual records (loans, …) through a published workbook. Done
+   every time you have a new file to import.
    See [`upload_data.py`](./upload_data.py).
 
 All Veracity endpoints below require the standard `Authorization` + `x-api-key` headers
@@ -184,7 +184,7 @@ MAPPINGS = main_position_mappings
 
 
 def main() -> None:
-    base_url = env("VERACITY_BASE_URL")
+    base_url = env("VERACITY_BASE_SERVICE_URL")
     file_path = Path(FILE_PATH)
     file_size = file_path.stat().st_size
 
@@ -254,8 +254,8 @@ if __name__ == "__main__":
 ## Phase 2 — Upload data
 
 Once a workbook is published, you can push data files at it. The pipeline runs
-asynchronously: the file lands in S3, the backend chunks and maps the rows, then
-consolidated results become available for download.
+asynchronously: the file lands in S3 and the backend takes over. Track processing
+status in the Veracity UI.
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
@@ -267,15 +267,6 @@ consolidated results become available for download.
 │         Content-Type: application/octet-stream                           │
 │         x-amz-server-side-encryption: AES256                             │
 │       body: the data file bytes                                          │
-│                                                                          │
-│  3. GET  /data-services/imports/data/{runId}/status                      │
-│       → poll until status == "Completed" or "Failed"                     │
-│                                                                          │
-│  4. GET  /data-services/imports/data/{runId}/metadata                    │
-│       → final row counts, step timings                                   │
-│                                                                          │
-│  5. GET  /data-services/imports/data/{runId}/results/file                │
-│       → presigned download URL for the consolidated results CSV          │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -284,9 +275,6 @@ consolidated results become available for download.
 | Method | Path | Purpose |
 | --- | --- | --- |
 | `POST` | `/data-services/imports/data` | Initiate data upload, receive presigned PUT URL + `runId` |
-| `GET` | `/data-services/imports/data/{run_id}/status` | Lightweight status poll |
-| `GET` | `/data-services/imports/data/{run_id}/metadata` | Full metadata after completion |
-| `GET` | `/data-services/imports/data/{run_id}/results/file` | Presigned URL to consolidated results CSV |
 
 ### Step 1 — Initiate data upload
 
@@ -335,56 +323,13 @@ Content-Type: application/octet-stream
 x-amz-server-side-encryption: AES256
 ```
 
-### Step 3 — Poll for completion
-
-`GET /data-services/imports/data/{run_id}/status`
-
-There is **no webhook** — the client must poll. Every 2-5 seconds is reasonable.
-
-```json
-{ "dataId": "run-abc123", "status": "Processing" }
-```
-
-Status values: `Pending`, `Processing`, `Completed`, `Failed`.
-
-### Step 4 — Fetch metadata
-
-`GET /data-services/imports/data/{run_id}/metadata`
-
-```json
-{
-  "dataId": "run-abc123",
-  "workbookName": "MainPosition",
-  "workbookVersion": "1",
-  "status": "Completed",
-  "startTime": "2026-05-21T12:00:00Z",
-  "totalRuntimeSeconds": 45.2,
-  "stepTimings": [
-    { "step": "chunks",      "runtimeSeconds": 10.5 },
-    { "step": "converter",   "runtimeSeconds": 20.1 },
-    { "step": "consolidate", "runtimeSeconds": 14.6 }
-  ],
-  "totalRows": 500,
-  "successfulRows": 495,
-  "failedRows": 5,
-  "dataSizeMb": 2.3
-}
-```
-
-### Step 5 — Download results
-
-`GET /data-services/imports/data/{run_id}/results/file`
-
-Returns a short-lived presigned download URL for the consolidated mapped results CSV:
-
-```json
-{ "expiration": 3600, "url": "https://s3.amazonaws.com/.../results.csv?..." }
-```
+Once S3 returns 200, the upload has been handed off to the pipeline. Track processing
+status from the Veracity UI.
 
 ### Example
 
-[`upload_data.py`](./upload_data.py) — end-to-end (initiate → PUT → poll → metadata →
-download URL), configured via global constants at the top of the file.
+[`upload_data.py`](./upload_data.py) — initiate + S3 PUT, configured via global
+constants at the top of the file.
 
 ```python
 """Upload a data file against an existing published workbook."""
@@ -392,7 +337,6 @@ download URL), configured via global constants at the top of the file.
 from __future__ import annotations
 
 import sys
-import time
 from pathlib import Path
 
 import requests
@@ -406,12 +350,11 @@ FILE_PATH = "MainPositionSubset.xlsx"
 WORKBOOK_NAME = "MainPosition"
 WORKBOOK_VERSION = "1"
 DATA_SOURCE = "final"
-POLL_INTERVAL_SECONDS = 3
 # ──────────────────────────────────────────────────────────────────────────────
 
 
 def main() -> None:
-    base_url = env("VERACITY_BASE_URL")
+    base_url = env("VERACITY_BASE_SERVICE_URL")
     file_path = Path(FILE_PATH)
     file_size = file_path.stat().st_size
 
@@ -437,8 +380,6 @@ def main() -> None:
     initiate_response = initiate.json()
     dump("Initiate response", initiate_response)
 
-    run_id = initiate_response["runId"]
-
     # Step 2: PUT to S3
     s3_headers = {
         "Content-Type": "application/octet-stream",
@@ -448,36 +389,7 @@ def main() -> None:
         put = requests.put(initiate_response["url"], data=f, headers=s3_headers, timeout=300)
     put.raise_for_status()
 
-    # Step 3: poll for completion
-    status_url = f"{base_url}/data-services/imports/data/{run_id}/status"
-    while True:
-        status = requests.get(status_url, headers=headers, timeout=30).json()
-        print(f"  status = {status['status']}")
-        if status["status"] in ("Completed", "Failed"):
-            break
-        time.sleep(POLL_INTERVAL_SECONDS)
-
-    # Step 4: fetch metadata
-    metadata = requests.get(
-        f"{base_url}/data-services/imports/data/{run_id}/metadata",
-        headers=headers, timeout=30,
-    ).json()
-    dump("Metadata", metadata)
-
-    # Step 5: get a presigned download URL for the results
-    results = requests.get(
-        f"{base_url}/data-services/imports/data/{run_id}/results/file",
-        headers=headers, timeout=30,
-    ).json()
-    dump("Results download URL", results)
-
-    save_output(__file__, {
-        "runId": run_id,
-        "initiate": initiate_response,
-        "finalStatus": status,
-        "metadata": metadata,
-        "resultsFile": results,
-    })
+    save_output(__file__, initiate_response)
 
 
 if __name__ == "__main__":

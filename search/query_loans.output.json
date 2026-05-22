@@ -1,0 +1,270 @@
+{
+  "total": 24,
+  "response_type": "hits",
+  "results": [
+    {
+      "opensearch_id": "loan::019e4d82-1fa7-75ef-b807-52e665ee67d8::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 322500.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "703212",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2016-09-28"
+    },
+    {
+      "opensearch_id": "loan::019e4d83-bfa2-7348-b6f0-b971a07ab4f5::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 322500.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "703212",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2016-09-28"
+    },
+    {
+      "opensearch_id": "loan::019e4d86-1043-7210-89df-542bd90d9c38::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 322500.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "703212",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2016-09-28"
+    },
+    {
+      "opensearch_id": "loan::019e4d86-1043-7210-89df-542d4610e38e::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 233950.0,
+      "seller_name": "CITI",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "702760",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2016-08-08"
+    },
+    {
+      "opensearch_id": "loan::019e4d83-bfa2-7348-b6f0-b973763604c4::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 233950.0,
+      "seller_name": "CITI",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "702760",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2016-08-08"
+    },
+    {
+      "opensearch_id": "loan::019e4d82-1fa7-75ef-b807-52e844cc8215::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 233950.0,
+      "seller_name": "CITI",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "702760",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2016-08-08"
+    },
+    {
+      "opensearch_id": "loan::019e4d82-1fa7-75ef-b807-52e9374eb7f0::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 220000.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "701777",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2014-12-15"
+    },
+    {
+      "opensearch_id": "loan::019e4d83-bfa2-7348-b6f0-b974ce81a671::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 220000.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "701777",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2014-12-15"
+    },
+    {
+      "opensearch_id": "loan::019e4d86-1043-7210-89df-542e96e8e594::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 220000.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "701777",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2014-12-15"
+    },
+    {
+      "opensearch_id": "loan::019e4d83-bfa2-7348-b6f0-b96eb69360d9::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 218700.0,
+      "seller_name": "CITI",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "705340",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2016-11-21"
+    },
+    {
+      "opensearch_id": "loan::019e4d82-1fa7-75ef-b807-52e31b8b503c::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 218700.0,
+      "seller_name": "CITI",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "705340",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2016-11-21"
+    },
+    {
+      "opensearch_id": "loan::019e4d86-1043-7210-89df-5428e00d78fb::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 218700.0,
+      "seller_name": "CITI",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "705340",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2016-11-21"
+    },
+    {
+      "opensearch_id": "loan::019e4d83-bfa2-7348-b6f0-b96fb940df0d::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 200000.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "703566",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2017-05-31"
+    },
+    {
+      "opensearch_id": "loan::019e4d82-1fa7-75ef-b807-52e45bddd38c::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 200000.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "703566",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2017-05-31"
+    },
+    {
+      "opensearch_id": "loan::019e4d86-1043-7210-89df-54294a9f2831::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 200000.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "703566",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2017-05-31"
+    },
+    {
+      "opensearch_id": "loan::019e4d83-bfa2-7348-b6f0-b97282a4c5b6::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 133000.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "701853",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2015-02-18"
+    },
+    {
+      "opensearch_id": "loan::019e4d82-1fa7-75ef-b807-52e7b635b2d3::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 133000.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "701853",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2015-02-18"
+    },
+    {
+      "opensearch_id": "loan::019e4d86-1043-7210-89df-542c6c6d21e5::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 133000.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "701853",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2015-02-18"
+    },
+    {
+      "opensearch_id": "loan::019e4d82-1fa7-75ef-b807-52e51984571d::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 123886.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "701783",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2014-12-15"
+    },
+    {
+      "opensearch_id": "loan::019e4d83-bfa2-7348-b6f0-b9701144002c::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 123886.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "701783",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2014-12-15"
+    },
+    {
+      "opensearch_id": "loan::019e4d86-1043-7210-89df-542a1140c0d8::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 123886.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "701783",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2014-12-15"
+    },
+    {
+      "opensearch_id": "loan::019e4d82-1fa7-75ef-b807-52ea2414bd52::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 119900.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "731811",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2018-06-29"
+    },
+    {
+      "opensearch_id": "loan::019e4d83-bfa3-764d-a1a0-199fee4c938e::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 119900.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "731811",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2018-06-29"
+    },
+    {
+      "opensearch_id": "loan::019e4d86-1043-7210-89df-542f4e244997::|||loan::final::",
+      "opensearch_score": null,
+      "orig_bal": 119900.0,
+      "seller_name": "CS",
+      "position_status": "Paidoff",
+      "tenant_loan_id": "731811",
+      "desk": "RPL",
+      "sub_desk": "RPL",
+      "settle_dt": "2018-06-29"
+    }
+  ]
+}
