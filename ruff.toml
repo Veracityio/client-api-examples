@@ -1,0 +1,3 @@
+# Enable ruff's isort-style import sorting on top of the default rule set.
+[lint]
+extend-select = ["I"]
