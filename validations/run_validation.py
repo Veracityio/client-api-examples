@@ -93,7 +93,6 @@ def main() -> None:
         "name": "KKR loan validations — public API demo",
         "description": "Kicked off from api_docs/validations/run_validation.py",
         "ruleSetIds": [RULE_SET_ID],
-        "ruleSetCollectionIds": [],
         "recordFilter": {
             "data_source": DATA_SOURCE,
             "ids": loan_ids,

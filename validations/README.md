@@ -57,7 +57,6 @@ auto-picks the loan with the most failed rules to drill into — no IDs to copy 
   "name": "KKR loan validations — public API demo",
   "description": "Kicked off from api_docs/validations/run_validation.py",
   "ruleSetIds": ["42054406-1bac-4e20-a6d5-6f7c22f59fa3"],
-  "ruleSetCollectionIds": [],
   "recordFilter": {
     "data_source": "final",
     "ids": [],
@@ -69,7 +68,6 @@ auto-picks the loan with the most failed rules to drill into — no IDs to copy 
 ```
 
 Notes:
-- At least one of `ruleSetIds` or `ruleSetCollectionIds` is required.
 - `recordFilter` accepts the same filter-group DSL as the search endpoints
   (see [`../search/README.md`](../search/README.md)). It also accepts a plain list of record
   `ids` to target a specific set of records. An empty filter + empty `ids` runs against
@@ -86,7 +84,6 @@ Notes:
   "description": "Kicked off from api_docs/validations/run_validation.py",
   "modelType": "Loan",
   "ruleSetIds": ["42054406-1bac-4e20-a6d5-6f7c22f59fa3"],
-  "ruleSetCollectionIds": [],
   "status": "processing",
   "recordsProcessedCount": 0,
   "failureCount": 0,
@@ -297,7 +294,6 @@ def main() -> None:
         "modelType": MODEL_TYPE,
         "name": "KKR loan validations — public API demo",
         "ruleSetIds": [RULE_SET_ID],
-        "ruleSetCollectionIds": [],
         "recordFilter": {"data_source": DATA_SOURCE, "ids": loan_ids, "filter_groups": []},
         "runReason": "manual",
         "emailNotifications": [],
